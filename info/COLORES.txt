@@ -1,0 +1,10 @@
+primary color : B4FF00
+secondary color : black
+tercery color : white
+GRAY-color: 5E5E5E;
+fw: 400 , 500 , 700
+white-light-p:E6EBF1;
+
+negro suave para parrafos: 333333 
+
+blanco suave para parrafos: E6EBF1

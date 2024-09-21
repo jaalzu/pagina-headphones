@@ -1,0 +1,36 @@
+@mixin font-style($color, $font-size, $font-weight) {
+    color: $color;
+    font-size: $font-size;
+    font-weight: $font-weight;
+  }
+  
+
+  
+  @mixin flex-center($align-items: center, $justify-content: center) {
+    display: flex;
+    align-items: $align-items;
+    justify-content: $justify-content;
+  }
+  
+
+
+
+  @mixin for-mobile {
+    @media (max-width: 599px) { @content; }
+  }
+  
+  @mixin for-tablet {
+    @media (min-width: 600px) and (max-width: 899px) { @content; }
+  }
+  
+  @mixin for-mobile-and-tablet {
+    @media (min-width: 300px) and (max-width: 899px) { @content; }
+  }
+  
+  @mixin for-desktop {
+    @media (min-width: 900px) and (max-width: 1799px) { @content; }
+  }
+  
+  @mixin for-big-desktop {
+    @media (min-width: 1800px) { @content; }
+  }

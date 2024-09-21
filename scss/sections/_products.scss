@@ -1,0 +1,35 @@
+.product{
+    height: auto;
+
+    .product__flex{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border-bottom: $border-product;
+        border-top:$border-product;
+        .product__grid{
+            display: grid;
+            border-left: $border-product;
+            
+            .product__box{
+                border-top:$border-product;
+                
+                &:nth-child(1){
+                    border: none;
+                }
+            }
+        }
+
+       
+       &:nth-child(3){
+        direction: rtl; // Invertimos la dirección del layout
+        border-top: none;
+        .product__grid{
+            border-right: $border-product;
+            border-left: none;
+        }
+        }   
+    }
+}
+
+   
+

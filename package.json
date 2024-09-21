@@ -1,0 +1,17 @@
+{
+  "name": "pagina-headphones",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "sass scss/style.scss css/style.css",
+    "start": "live-server public",
+    "watch-css": "sass --watch scss/style.scss:css/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.79.1"
+  }
+}

@@ -1,0 +1,105 @@
+.navbar{
+    height: 10vh;
+    padding-inline: 3vw;
+    @include flex-center(center,space-between);
+    
+    .logo{
+        font-size: 1.5rem;
+        font-weight: $fw-regular;
+        z-index: 4;
+        span{
+            color: $color-primary;
+        }
+    }
+
+
+    .nav__list{
+        @include flex-center();
+        gap: 1.5rem;
+        z-index: 3;
+        .nav__item a{
+            color: $color-white;
+            transition: .2s ease;
+
+            &:hover{
+                color: $color-primary;
+            }
+        }
+    }
+
+    #btn-nav{
+        display: none;
+    }
+
+    .nav__buttons{
+        display: none;
+        z-index: 3;
+    }
+}
+
+@include for-mobile-and-tablet{
+    .navbar{
+        .nav__list{
+            position: fixed;
+            right: 200%;
+            top: 0;
+            height: 100vh;
+            width: 100vw;
+            align-items: flex-end;
+            justify-content: flex-start;
+            padding-top: 8rem;
+            flex-direction: column;
+            background-color: black;
+            gap: 3.5rem;
+            padding-right: 1.5rem;
+            transition:  .4s ease;
+
+
+            .nav__item a{
+                font-size: 2.5rem;
+            }
+
+            
+        }
+
+        #btn-nav{
+            display: inline-flex;
+        }
+
+
+        #btn-desktop{
+            display: none;
+        }
+
+        .show-menu{
+            right: 0;
+        }
+       
+       
+
+        .nav__buttons{
+            display: inline-flex;
+            transition: .3s ease;
+            .close__btn{
+                display: none;
+            }
+        }
+    }
+}
+
+
+
+@include for-tablet {
+    .navbar{
+        .nav__list{
+            .nav__item a{
+                font-size: 3.2rem;
+                letter-spacing: 2px;
+            }
+
+            #btn-nav{
+                width: 35%;
+            }
+        }
+    }
+}
