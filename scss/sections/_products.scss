@@ -1,7 +1,8 @@
 .product{
     height: auto;
-
+    margin-top: 2rem;
     .product__flex{
+        margin-top: 2rem;
         display: grid;
         grid-template-columns: 1fr 1fr;
         border-bottom: $border-product;
@@ -11,13 +12,22 @@
         .product__grid{
             display: grid;
             border-left: $border-product;
-
-            
             .product__box{
+                padding: 3rem 1rem 3rem 4rem;
                 border-top:$border-product;
+                display: flex;
+                flex-direction: column;
+                direction: ltr;
+
+
+                p{
+                    margin-top: 1.5rem;
+                }
+
                 &:nth-child(1){
                     border: none;
                 }
+                
             }
         }
 
@@ -46,10 +56,25 @@
 
 
 
-@include for-mobile{
+@include for-mobile-and-tablet{
     .product{
         .product__flex{
             grid-template-columns: 1fr;
+            border: none;
+
+            .product__grid{
+                border-top: none;
+
+                .product__box{
+                    border: none;
+                }
+            }
+
+
+            &:nth-child(3){
+                direction: ltr; 
+                }
         }
+
     }
 }

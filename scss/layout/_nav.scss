@@ -2,7 +2,6 @@
     height: 10vh;
     padding-inline: 3vw;
     @include flex-center(center,space-between);
-    
     .logo{
         font-size: 1.5rem;
         font-weight: $fw-regular;
