@@ -255,4 +255,10 @@ header {
   border-left: none;
 }
 
+@media (max-width: 599px) {
+  .product .product__flex {
+    grid-template-columns: 1fr;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

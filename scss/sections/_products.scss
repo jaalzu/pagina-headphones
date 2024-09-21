@@ -6,13 +6,15 @@
         grid-template-columns: 1fr 1fr;
         border-bottom: $border-product;
         border-top:$border-product;
+
+
         .product__grid{
             display: grid;
             border-left: $border-product;
+
             
             .product__box{
                 border-top:$border-product;
-                
                 &:nth-child(1){
                     border: none;
                 }
@@ -21,7 +23,7 @@
 
        
        &:nth-child(3){
-        direction: rtl; // Invertimos la dirección del layout
+        direction: rtl; 
         border-top: none;
         .product__grid{
             border-right: $border-product;
@@ -33,3 +35,21 @@
 
    
 
+
+
+
+
+
+
+
+
+
+
+
+@include for-mobile{
+    .product{
+        .product__flex{
+            grid-template-columns: 1fr;
+        }
+    }
+}
