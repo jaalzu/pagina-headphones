@@ -564,5 +564,63 @@ header {
     font-size: 1.05rem;
   }
 }
+.discount {
+  padding-bottom: 3rem;
+  margin-top: 3rem;
+}
+.discount .discount__box {
+  background-color: #B4FF00;
+  width: min(87%, 1300px);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: 8px;
+  justify-content: center;
+  padding-bottom: 2rem;
+  gap: 1rem;
+  text-align: center;
+}
+.discount .discount__box h3 {
+  color: #000000;
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+.discount .discount__box p {
+  color: #000000;
+  margin-inline: 15vw;
+}
+.discount .discount__box form {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+}
+.discount .discount__box form input {
+  padding: 0.55rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 500px;
+  background: transparent;
+  outline: none;
+}
+.discount .discount__box form input::placeholder {
+  font-family: "Roboto Mono", monospace;
+  color: #000000;
+}
+.discount .discount__box form button {
+  background-color: #000000;
+  font-family: "Roboto Mono", monospace;
+  min-width: 25%;
+  border: 1px solid black;
+  transition: 0.3s ease;
+}
+.discount .discount__box form button:hover {
+  color: #000000;
+  background-color: transparent;
+}
 
 /*# sourceMappingURL=style.css.map */

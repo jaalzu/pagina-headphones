@@ -1,0 +1,64 @@
+.discount{
+    padding-bottom: 3rem;
+    margin-top: 3rem;
+    .discount__box{
+        background-color: $color-primary;
+        width: min(87%, 1300px);
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 2rem;
+        border-radius: 8px;
+        justify-content: center;
+        padding-bottom: 2rem;
+        gap: 1rem;
+        text-align: center;
+        h3{
+            color: $color-black;
+            font-size: 1.8rem;
+            font-weight: 800;
+        }
+        p{
+            color: $color-black;
+            margin-inline: 15vw;
+        }
+
+        form{
+            margin-top: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            width: 100%;
+
+            input{
+                padding: .550rem ;
+                border: 1px solid black;
+                border-radius: 5px;
+                width: 500px;
+                background: transparent;
+                outline: none;
+                
+
+                &::placeholder{
+                    font-family: $ff-secondary;
+                    color: $color-black;
+                }
+            }
+            button{
+                background-color: $color-black;
+                font-family: $ff-secondary;
+                min-width: 25%;
+                border: 1px solid black;
+                transition: .3s ease;
+
+
+                &:hover{
+                    color: $color-black;
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+}
