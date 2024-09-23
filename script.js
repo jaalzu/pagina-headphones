@@ -15,3 +15,13 @@ document.addEventListener('DOMContentLoaded', () => {
       navList.classList.toggle('show-menu');
     });
   });
+
+
+
+
+
+
+
+
+
+  

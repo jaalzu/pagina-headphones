@@ -488,7 +488,7 @@ header {
   display: grid;
   margin-inline: 10vw;
   grid-template-columns: 1fr 1fr 1fr;
-  margin-block: 10rem;
+  margin-block: 9rem;
   border-radius: 30px;
   gap: 3rem;
 }
@@ -507,7 +507,6 @@ header {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  margin-bottom: 0.5rem;
   width: 100%;
 }
 .about .about__grid .about__box .box__title span {
@@ -825,6 +824,42 @@ header {
   }
   .discount .discount__box form input {
     width: 250px;
+  }
+}
+.sponsors {
+  margin-bottom: 10rem;
+  margin-inline: 6vw;
+}
+.sponsors h3 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.sponsors .sponsors__grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.sponsors .sponsors__grid .sponsor__item {
+  display: flex;
+  justify-content: center;
+}
+.sponsors .sponsors__grid .sponsor__item img {
+  width: 100px;
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+  .sponsors .sponsors__grid {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 3rem;
+  }
+}
+@media (max-width: 599px) {
+  .sponsors .sponsors__grid {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 4rem;
+  }
+  .sponsors .sponsors__grid .sponsor__item img {
+    width: 80px;
   }
 }
 
