@@ -95,7 +95,9 @@
 @include for-small-mobile{
     .discount{
         margin-inline: 4vw;
+        margin-top: 0;
 
+        
         .discount__box{
             width: 79%;
 

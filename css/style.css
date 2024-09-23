@@ -390,18 +390,17 @@ header {
 }
 
 @media (max-width: 599px) {
-  .hero .hero__title {
-    letter-spacing: 0;
-    display: flex;
-    margin-bottom: 2rem;
+  .hero {
+    height: 100vh;
   }
   .hero .hero__subtitle {
     align-items: center;
     text-align: center;
     flex-direction: column;
+    justify-content: space-evenly;
   }
-  .hero a {
-    margin-bottom: 1rem;
+  .hero .hero__subtitle a {
+    margin-bottom: 10rem;
   }
 }
 .product {
@@ -468,13 +467,15 @@ header {
   align-items: center;
 }
 .about .about__description {
-  margin-bottom: 15rem;
-  margin-top: 6rem;
   text-align: center;
-  display: flex;
-  gap: 8rem;
+  gap: 7rem;
+  margin: 5rem auto;
   line-height: 1.6;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.about .about__description .col {
+  padding: 0 2rem;
 }
 .about .about__description .col span {
   display: flex;
@@ -518,10 +519,9 @@ header {
 
 @media (max-width: 599px) {
   .about .about__description {
-    flex-direction: column;
-    margin-bottom: 10rem;
-    gap: 3rem;
-    margin-inline: 5vw;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    margin: 2rem auto;
   }
   .about .about__grid {
     grid-template-columns: 1fr;
@@ -666,8 +666,9 @@ header {
     max-width: 20%;
   }
   .gallery .social a {
-    font-size: 1.1rem;
+    font-size: 1.2em;
     gap: 0.5rem;
+    margin-left: 0.5rem;
     flex-direction: column;
   }
   .gallery .box-img span {
@@ -700,14 +701,11 @@ header {
 }
 @media (max-width: 399px) {
   .gallery {
-    margin-inline: 1vw;
+    margin-inline: 2vw;
+    padding-bottom: 3rem;
   }
   .gallery .social {
     display: none;
-  }
-  .gallery .gallery__grid {
-    grid-template-columns: 1fr;
-    gap: 0.6rem;
   }
   .gallery .box-img:nth-child(1) {
     grid-column: span 6;
@@ -732,7 +730,8 @@ header {
     align-items: center;
     justify-content: center;
     margin-top: 1rem;
-    font-size: 1.05rem;
+    font-size: 1.3rem;
+    text-align: center;
   }
 }
 .discount {
@@ -818,6 +817,7 @@ header {
 @media (max-width: 399px) {
   .discount {
     margin-inline: 4vw;
+    margin-top: 0;
   }
   .discount .discount__box {
     width: 79%;
@@ -854,12 +854,87 @@ header {
   }
 }
 @media (max-width: 599px) {
+  .sponsors {
+    margin-bottom: 6rem;
+  }
   .sponsors .sponsors__grid {
     grid-template-columns: repeat(2, 1fr);
     row-gap: 4rem;
   }
   .sponsors .sponsors__grid .sponsor__item img {
     width: 80px;
+  }
+}
+.uses {
+  margin-block: 12rem;
+  height: auto;
+}
+.uses .uses__grid {
+  display: flex;
+  justify-content: space-between;
+  margin-inline: 10vw;
+  flex-wrap: wrap;
+  gap: 2rem;
+  row-gap: 5rem;
+}
+.uses .uses__grid .uses__card {
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+  height: 530px;
+  border-radius: 20px;
+  background-color: #202020;
+  -webkit-box-shadow: 13px 13px 0px 0px rgb(180, 255, 0);
+  -moz-box-shadow: 13px 13px 0px 0px rgb(180, 255, 0);
+  box-shadow: 13px 13px 0px 0px rgb(180, 255, 0);
+  transition: 0.4s ease;
+}
+.uses .uses__grid .uses__card:hover {
+  transform: translateY(-50px);
+}
+.uses .uses__grid .uses__card .uses__img {
+  padding: 1rem;
+  height: 50%;
+}
+.uses .uses__grid .uses__card .uses__img img {
+  opacity: 0.8;
+  border-radius: 20px;
+  object-fit: cover;
+  height: 100%;
+}
+.uses .uses__grid .uses__card .uses__description {
+  padding: 0.3rem 1.5rem;
+}
+.uses .uses__grid .uses__card .uses__description h3 {
+  margin-bottom: 1rem;
+  font-size: 1.23rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.uses .uses__grid .uses__card .uses__description p {
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+  .uses {
+    margin-block: 9rem;
+  }
+  .uses .uses__grid {
+    justify-content: center;
+  }
+}
+@media (max-width: 599px) {
+  .uses {
+    margin-block: 7rem;
+    margin-inline: 1vw;
+    gap: 0;
+  }
+  .uses .uses__grid {
+    row-gap: 4.5rem;
+  }
+  .uses .uses__grid .uses__card {
+    height: 770px;
   }
 }
 

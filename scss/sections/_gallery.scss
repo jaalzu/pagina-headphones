@@ -161,8 +161,9 @@ margin-inline: 3vw;
             right: 8.5%;
             max-width: 20%;
             a{
-                font-size: 1.1rem;
+                font-size: 1.2em;
                 gap: .5rem;
+                margin-left: .5rem;
                 flex-direction: column;
             }
         }
@@ -203,15 +204,14 @@ margin-inline: 3vw;
 
 @include for-small-mobile{
     .gallery{
-        margin-inline: 1vw;
-
+        margin-inline: 2vw;
+        padding-bottom: 3rem;
+        
         .social{
             display: none;
         }
 
         .gallery__grid{
-            grid-template-columns: 1fr;
-            gap: .6rem;
         }
 
         .box-img:nth-child(1) {
@@ -241,7 +241,8 @@ margin-inline: 3vw;
          .social-small-mobile{
             @include flex-center();
             margin-top: 1rem;
-            font-size: 1.050rem;
+            font-size: 1.3rem;
+            text-align: center;
         }
     }
 }

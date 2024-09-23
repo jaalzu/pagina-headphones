@@ -2,7 +2,6 @@
    height: auto;
    margin-top: 4rem;
    margin-inline: 5vw;
-
     .section__title{
         display: flex;
         flex-direction: column;
@@ -10,19 +9,16 @@
     }
    
    .about__description{
-    margin-bottom: 15rem;
-    margin-top: 6rem;
     text-align: center;
-    
-
-    display: flex;
-    gap: 8rem;
+    gap: 7rem;
+    margin: 5rem auto;
     line-height: 1.6;
-    align-items: center;
-    
-    .col{
-        span{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 
+    .col{
+        padding: 0 2rem;
+        span{
             display: flex;
             justify-content: center;
             color: $color-primary;
@@ -30,6 +26,7 @@
             font-weight: $fw-bold;
             margin-block: .5rem;
         }
+        
     }
 }
 
@@ -75,10 +72,10 @@
 @include for-mobile{
     .about{
         .about__description{
-            flex-direction: column;
-            margin-bottom: 10rem;
-            gap: 3rem;
-            margin-inline: 5vw;
+            grid-template-columns: 1fr;
+            gap: 4rem;
+            margin: 2rem auto;
+
         }
 
         .about__grid{
