@@ -36,8 +36,8 @@
 @include for-mobile{
     .hero{
         .hero__title{
-            padding-top: 2rem;
             letter-spacing: 0;
+            display: flex;
             margin-bottom: 2rem;
         }
 
@@ -45,6 +45,10 @@
             align-items: center;
             text-align: center;
             flex-direction: column;
+        }
+
+        a{
+            margin-bottom: 1rem;
         }
     }
 }
