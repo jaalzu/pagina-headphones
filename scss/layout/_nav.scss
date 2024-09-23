@@ -2,30 +2,21 @@
     height: 10vh;
     padding-inline: 3vw;
     @include flex-center(center,space-between);
-    .logo{
-        font-size: 1.5rem;
-        font-weight: $fw-regular;
-        z-index: 4;
-        span{
-            color: $color-primary;
-        }
-    }
+
+    
 
 
     .nav__list{
         @include flex-center();
         gap: 1.5rem;
         z-index: 3;
-        .nav__item a{
-            color: $color-white;
-            transition: .2s ease;
-
-            &:hover{
-                color: $color-primary;
-            }
-        }
+            a{
+                font-size: 1.1rem;
+                color: $color-white;
+                position: relative;
+               }
     }
-
+        
     #btn-nav{
         display: none;
     }
@@ -54,7 +45,7 @@
             transition:  .4s ease;
 
 
-            .nav__item a{
+            .nav__links a{
                 font-size: 2.5rem;
             }
 
@@ -63,6 +54,7 @@
 
         #btn-nav{
             display: inline-flex;
+            color: $color-black;
         }
 
 

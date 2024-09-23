@@ -3,6 +3,7 @@
     margin: 0;
     list-style: none;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -17,9 +18,45 @@ img{
     display: block;
  }
 
+
+
  a{
     cursor: pointer;
- }
+    position: relative;
+}
+   .nav__links a{
+       &::before{
+           content: "";
+           position: absolute;
+           width: 100%;
+           border-radius: 4px;
+           left: 0;
+           bottom: 5%;
+           transform-origin: right;
+           transform: scaleX(0);
+           background-color: $color-primary;
+           height: 1px;
+           transition: transform 0.3s ease-in-out; // Transición para el ancho
+           
+        }
+        &:hover::before{
+            transform-origin: left;
+            transform: scaleX(1);
+        }
+        
+    }
+ 
+
+ .logo{
+    font-size: 2.1rem;
+    font-weight: $fw-regular;
+    z-index: 4;
+    cursor: pointer;
+    span{
+        color: $color-primary;
+    }
+}
+
 
 .section__title{
     padding-block: 2rem;

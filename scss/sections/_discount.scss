@@ -1,10 +1,9 @@
 .discount{
-    padding-bottom: 6rem;
     height: auto;
-    margin-top:6rem;
-
+    margin-top:2vh;
     
     .discount__box{
+        transform: translateY(120px);
         background-color: $color-primary;
         width: min(87%, 1100px);
         margin: 0 auto;
