@@ -96,7 +96,7 @@ span, p, a {
 header {
   height: 100vh;
   max-width: 100%;
-  background-image: url(/public/pexels-nardo-1870916-3574678\ -\ copia.jpg);
+  background-image: url(../public/pexels-nardo-1870916-3574678\ -\ copia.jpg);
   background-position: 45%;
   background-size: contain;
   background-attachment: fixed;
@@ -565,12 +565,13 @@ header {
   }
 }
 .discount {
-  padding-bottom: 3rem;
-  margin-top: 3rem;
+  padding-bottom: 6rem;
+  height: auto;
+  margin-top: 6rem;
 }
 .discount .discount__box {
   background-color: #B4FF00;
-  width: min(87%, 1300px);
+  width: min(87%, 1100px);
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -601,7 +602,7 @@ header {
 }
 .discount .discount__box form input {
   padding: 0.55rem;
-  border: 1px solid black;
+  border: 1px solid #000000;
   border-radius: 5px;
   width: 500px;
   background: transparent;
@@ -621,6 +622,38 @@ header {
 .discount .discount__box form button:hover {
   color: #000000;
   background-color: transparent;
+}
+
+@media (min-width: 300px) and (max-width: 899px) {
+  .discount {
+    margin-inline: 8vw;
+  }
+  .discount .discount__box p {
+    margin-inline: 0vw;
+  }
+  .discount .discount__box form {
+    flex-direction: column;
+    margin-top: 1rem;
+    gap: 1.3rem;
+  }
+  .discount .discount__box form input {
+    width: 280px;
+  }
+  .discount .discount__box button {
+    width: 60%;
+    font-size: 0.95rem;
+  }
+}
+@media (max-width: 399px) {
+  .discount {
+    margin-inline: 4vw;
+  }
+  .discount .discount__box {
+    width: 79%;
+  }
+  .discount .discount__box form input {
+    width: 250px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
