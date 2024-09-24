@@ -34,13 +34,15 @@
             gap: 2rem;
             width: 100%;
             input{
-                padding: .550rem ;
+                padding: .650rem ;
                 border: 1px solid $color-black;
                 border-radius: 5px;
                 width: 500px;
                 background: transparent;
                 outline: none;
-                
+                font-family: $ff-primary;
+                font-weight: 300;
+                color: $color-black;
 
                 &::placeholder{
                     font-family: $ff-secondary;

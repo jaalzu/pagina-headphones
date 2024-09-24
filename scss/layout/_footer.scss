@@ -111,8 +111,6 @@
 
 @include for-tablet{
     .footer{
-            padding-top: 11rem;
-
             .logo{
                 width: 95%;
             }
@@ -138,8 +136,6 @@
 
 @include for-mobile{
     .footer{
-        padding-top: 11rem;
-
         .logo{
             justify-content: center;
             width: 100%;

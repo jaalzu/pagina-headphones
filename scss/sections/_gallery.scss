@@ -104,7 +104,7 @@ padding-block: 6rem;
     .gallery{
         margin-inline: 1vw;
         .social{
-            right: 34%;
+            width: 200px;
         }
     }
 }
@@ -112,10 +112,9 @@ padding-block: 6rem;
 @include for-tablet{
     .gallery{
 margin-inline: 3vw;
-
         .gallery__grid{
         grid-auto-rows: 150px;
-            grid-template-columns: repeat(3,1fr);
+            grid-template-columns: repeat(4,1fr);
         }
 
         .social{
@@ -130,9 +129,13 @@ margin-inline: 3vw;
 
         .box-img:nth-child(1) {
             transform: translateY(-0px);
+            grid-column: span 3;
+            grid-row: span 2;
         }
         .box-img:nth-child(2) {
             transform: translateY(-10px);
+            grid-column: span 3;
+
         }
 
         .box-img:nth-child(3) {
@@ -156,12 +159,13 @@ margin-inline: 3vw;
             grid-template-columns: repeat(2,1fr);
         }
         .social{
+            display: flex;
             position: absolute;
-            top: 53%;
-            right: 8.5%;
-            max-width: 20%;
+            top: 55%;
+            right: 14%;
+            max-width: 45%;
             a{
-                font-size: 1.2em;
+                font-size: 1.4em;
                 gap: .5rem;
                 margin-left: .5rem;
                 flex-direction: column;
@@ -207,6 +211,11 @@ margin-inline: 3vw;
         margin-inline: 2vw;
         padding-bottom: 3rem;
         
+        .gallery__grid{
+            gap: 1rem;
+            grid-template-columns: repeat(3,1fr);
+        }
+
         .social{
             display: none;
         }
@@ -215,17 +224,21 @@ margin-inline: 3vw;
         }
 
         .box-img:nth-child(1) {
-            grid-column: span 6;
+            grid-column: span 4;
+            transform: translateY(-15px);
             grid-row: span 1;
-            transform: translateY( -10px);
         }
         .box-img:nth-child(2) {
-            grid-column: span 4;
+            grid-column: span 6;
+            grid-row: span 1;
+        }
+        .box-img:nth-child(3) {
+            grid-column: span 2;
             grid-row: span 1;
         }
 
         .box-img:nth-child(4) {
-            grid-column: span 6;
+            grid-column: span 4;
             grid-row: span 1;
     
         }
