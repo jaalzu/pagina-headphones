@@ -69,12 +69,21 @@
 }
 
 
+@include for-tablet{
+    .about{
+        .about__grid{
+            margin-inline: 1vw;
+        }
+    }
+}
+
+
 @include for-mobile{
     .about{
         .about__description{
+            margin: 2rem auto;
             grid-template-columns: 1fr;
             gap: 4rem;
-            margin: 2rem auto;
 
         }
 

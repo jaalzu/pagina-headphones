@@ -46,7 +46,7 @@
                     text-transform: uppercase;
                 }
                 p{
-                    font-size: .820rem;
+                    font-size: .790rem;
                     line-height: 1.5;
                 }
             }
@@ -61,6 +61,13 @@
     
     .uses__grid{
             justify-content: center;
+
+
+            .uses__card{
+                &:hover{
+                    transform: translateY(0);
+                }
+            }
             }
     }
 }
@@ -75,6 +82,10 @@
             row-gap: 4.5rem;
             .uses__card{
                 height: 770px;
+
+                &:hover{
+                    transform: translateY(0);
+                }
             }
         }
     }

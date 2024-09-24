@@ -24,6 +24,10 @@
                     margin-top: 1.5rem;
                 }
 
+                span{
+                    font-weight: $fw-bold;
+                }
+
                 &:nth-child(1){
                     border: none;
                 }

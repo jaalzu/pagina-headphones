@@ -3,13 +3,12 @@
     padding-inline: 3vw;
     @include flex-center(center,space-between);
 
-    
-
 
     .nav__list{
         @include flex-center();
         gap: 1.5rem;
         z-index: 3;
+        
             a{
                 font-size: 1.1rem;
                 color: $color-white;
