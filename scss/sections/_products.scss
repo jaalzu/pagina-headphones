@@ -8,18 +8,18 @@
         border-bottom: $border-product;
         border-top:$border-product;
 
-
+        
         .product__grid{
             display: grid;
             border-left: $border-product;
+           
             .product__box{
                 padding: 3rem 1rem 3rem 4rem;
                 border-top:$border-product;
                 display: flex;
                 flex-direction: column;
                 direction: ltr;
-
-
+                
                 p{
                     margin-top: 1.5rem;
                 }
@@ -42,8 +42,6 @@
         .product__grid{
             border-right: $border-product;
             border-left: none;
-
-            
         }
         }   
     }
@@ -67,6 +65,10 @@
         .product__flex{
             grid-template-columns: 1fr;
             border: none;
+
+            img{
+                margin-bottom: 1.5rem;
+            }
 
             .product__grid{
                 border-top: none;

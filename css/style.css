@@ -368,8 +368,8 @@ header {
 .hero .hero__title {
   text-align: center;
   margin-top: 26rem;
-  font-size: clamp(1.3rem, 2.7vw, 3.8rem);
-  letter-spacing: 1px;
+  font-size: clamp(1.1rem, 2.7vw, 3.8rem);
+  line-height: 1.2;
   text-transform: uppercase;
   padding-inline: 1vw;
 }
@@ -393,14 +393,17 @@ header {
   .hero {
     height: 100vh;
   }
+  .hero .hero__title {
+    margin-top: 24rem;
+  }
   .hero .hero__subtitle {
     align-items: center;
     text-align: center;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
   }
   .hero .hero__subtitle a {
-    margin-bottom: 10rem;
+    margin-top: 2rem;
   }
 }
 .product {
@@ -447,6 +450,9 @@ header {
   .product .product__flex {
     grid-template-columns: 1fr;
     border: none;
+  }
+  .product .product__flex img {
+    margin-bottom: 1.5rem;
   }
   .product .product__flex .product__grid {
     border-top: none;
@@ -920,7 +926,7 @@ header {
   text-transform: uppercase;
 }
 .uses .uses__grid .uses__card .uses__description p {
-  font-size: 0.79rem;
+  font-size: 0.8rem;
   line-height: 1.5;
 }
 
@@ -938,17 +944,20 @@ header {
 @media (max-width: 599px) {
   .uses {
     margin-block: 7rem;
-    margin-inline: 1vw;
+    margin-inline: 0vw;
     gap: 0;
   }
   .uses .uses__grid {
     row-gap: 4.5rem;
   }
   .uses .uses__grid .uses__card {
-    height: 770px;
+    height: 550px;
   }
   .uses .uses__grid .uses__card:hover {
     transform: translateY(0);
+  }
+  .uses .uses__grid .uses__card .uses__img {
+    height: 40%;
   }
 }
 

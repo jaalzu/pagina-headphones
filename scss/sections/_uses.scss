@@ -46,7 +46,7 @@
                     text-transform: uppercase;
                 }
                 p{
-                    font-size: .790rem;
+                    font-size: .8rem;
                     line-height: 1.5;
                 }
             }
@@ -62,7 +62,6 @@
     .uses__grid{
             justify-content: center;
 
-
             .uses__card{
                 &:hover{
                     transform: translateY(0);
@@ -75,16 +74,20 @@
 @include for-mobile{
     .uses{
         margin-block: 7rem;
-        margin-inline: 1vw;
+        margin-inline: 0vw;
         gap: 0;
 
         .uses__grid{
             row-gap: 4.5rem;
+
             .uses__card{
-                height: 770px;
+                height: 550px;
 
                 &:hover{
                     transform: translateY(0);
+                }
+                .uses__img{
+                    height: 40%;
                 }
             }
         }

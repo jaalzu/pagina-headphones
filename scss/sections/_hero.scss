@@ -6,8 +6,8 @@
     .hero__title{
         text-align: center;
         margin-top: 26rem;
-        font-size: clamp(1.3rem,2.7vw,3.8rem);
-        letter-spacing: 1px;
+        font-size: clamp(1.1rem,2.7vw,3.8rem);
+        line-height: 1.2;
         text-transform: uppercase;
         padding-inline: 1vw;
        
@@ -37,15 +37,16 @@
     .hero{
         height: 100vh;
         .hero__title{
+            margin-top: 24rem;
         }
 
         .hero__subtitle{
             align-items: center;
             text-align: center;
             flex-direction: column;
-            justify-content: space-evenly;
+            justify-content: center;
             a{
-                margin-bottom: 10rem;                
+                margin-top: 2rem;
             }
         }
     }
