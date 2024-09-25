@@ -30,6 +30,8 @@
                 font-size: 2.1rem;
             }
           }
+          
+          
 
           .footer__social{
             display: flex;
@@ -48,8 +50,6 @@
             display: flex;
             flex-direction: column;
             text-align: end;
-
-
             .privacy{
                 display: flex;
                 flex-direction: column;
@@ -57,6 +57,7 @@
                 font-size: 1.4rem;
 
                 a{
+                    color: white;
                     &:hover{
                         text-decoration: underline;
                     }
@@ -147,16 +148,23 @@
                     font-size: 2.2rem;
                 }
             }
+            a{
+                margin-top: 2rem;
+                width: 50%;
+              }
 
             .footer__social{
-                margin-block: 4rem;
-                gap: 3rem;
+                margin-block: 3rem;
+                gap: 0rem;
             }
 
             .footer__info{
-                align-items: center;
                 text-align: center;
                 margin-bottom: 1.7rem;
+                .privacy{
+                align-items: center;
+
+                }
             }
 
         }
