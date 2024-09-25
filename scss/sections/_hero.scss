@@ -34,15 +34,16 @@
 }
 
 
-@include for-mobile{
+@include for-mobile-and-tablet{
     .hero{
         height: 100vh;
         .hero__title{
-            margin-top: 1.5rem;
+            margin-top: 6rem;
+            margin-inline: 4vw;
         }
 
         .hero__subtitle{
-            margin-bottom: 8rem;
+            margin-bottom: 5rem;
             align-items: center;
         }
     }

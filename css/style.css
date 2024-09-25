@@ -176,6 +176,13 @@ header {
 }
 
 @media (min-width: 300px) and (max-width: 899px) {
+  .navbar {
+    background-color: #1a1a1e;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    top: 0%;
+  }
   .navbar .nav__list {
     position: fixed;
     right: 200%;
@@ -205,7 +212,7 @@ header {
     right: 0;
   }
   .navbar .nav__buttons {
-    z-index: 5;
+    margin-right: 2.5rem;
     display: inline-flex;
     transition: 0.3s ease;
   }
@@ -392,15 +399,16 @@ header {
   margin-top: 2rem;
 }
 
-@media (max-width: 599px) {
+@media (min-width: 300px) and (max-width: 899px) {
   .hero {
     height: 100vh;
   }
   .hero .hero__title {
-    margin-top: 1.5rem;
+    margin-top: 6rem;
+    margin-inline: 4vw;
   }
   .hero .hero__subtitle {
-    margin-bottom: 8rem;
+    margin-bottom: 5rem;
     align-items: center;
   }
 }

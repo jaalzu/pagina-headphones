@@ -29,6 +29,11 @@
 
 @include for-mobile-and-tablet{
     .navbar{
+        background-color: $color-black;
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+        top: 0%;
         .nav__list{
                 position: fixed;
                 right: 200%;
@@ -57,8 +62,6 @@
         }
 
         #btn-nav{
-
-
             display: inline-flex;
             color: $color-black;
         }
@@ -75,12 +78,11 @@
        
 
         .nav__buttons{
-            z-index: 5;
+            margin-right: 2.5rem;
             display: inline-flex;
             transition: .3s ease;
             .close__btn{
                 display: none;
-
             }
         }
     }
