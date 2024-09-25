@@ -43,6 +43,7 @@
                 gap: 3.5rem;
                 padding-right: 1.5rem;
                 transition:  .4s ease;
+
             }
                 
                 
@@ -56,6 +57,8 @@
         }
 
         #btn-nav{
+
+
             display: inline-flex;
             color: $color-black;
         }
@@ -72,11 +75,12 @@
        
 
         .nav__buttons{
+            z-index: 5;
             display: inline-flex;
             transition: .3s ease;
-            
             .close__btn{
                 display: none;
+
             }
         }
     }
