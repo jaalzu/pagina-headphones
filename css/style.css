@@ -16,6 +16,7 @@ body {
 img {
   width: 100%;
   display: block;
+  height: auto;
 }
 
 a {
@@ -683,6 +684,7 @@ header {
     gap: 0.5rem;
     margin-left: 0.5rem;
     flex-direction: column;
+    color: white;
   }
   .gallery .box-img span {
     font-size: 0.9rem;
@@ -753,6 +755,9 @@ header {
     margin-top: 1rem;
     font-size: 1.3rem;
     text-align: center;
+  }
+  .gallery .social-small-mobile a {
+    color: #E6EBF1;
   }
 }
 .discount {

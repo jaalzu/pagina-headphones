@@ -24,4 +24,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-  
+    // Inicializar ScrollReveal
+    ScrollReveal().reveal('.hero', {
+      // Opciones de ScrollReveal aquí
+      duration: 1000, // Duración de la animación
+      distance: '50px', // Distancia de desplazamiento
+      easing: 'ease-in-out' // Easing de la animación
+  });

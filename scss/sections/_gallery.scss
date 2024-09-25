@@ -169,6 +169,7 @@ margin-inline: 3vw;
                 gap: .5rem;
                 margin-left: .5rem;
                 flex-direction: column;
+                color: $color-white;
             }
         }
 
@@ -220,8 +221,7 @@ margin-inline: 3vw;
             display: none;
         }
 
-        .gallery__grid{
-        }
+        
 
         .box-img:nth-child(1) {
             grid-column: span 4;
@@ -256,6 +256,10 @@ margin-inline: 3vw;
             margin-top: 1rem;
             font-size: 1.3rem;
             text-align: center;
+
+            a{
+                color: $color-white-light;
+            }
         }
     }
 }
