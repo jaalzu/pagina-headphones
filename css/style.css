@@ -7,10 +7,10 @@
 }
 
 body {
-  background-color: #000000;
+  background-color: #1a1a1e;
   color: #E6EBF1;
   line-height: 1.4;
-  font-size: 1rem;
+  font-size: 1.04rem;
 }
 
 img {
@@ -42,7 +42,7 @@ a {
 }
 
 .logo {
-  font-size: 2.1rem;
+  font-size: 1.6rem;
   font-weight: 400;
   z-index: 4;
   cursor: pointer;
@@ -92,14 +92,14 @@ span, p, a, h3 {
   border-radius: 5px;
   cursor: pointer;
   border: none;
-  color: #FFFFFF;
+  color: white;
   transition: background-color 0.3s ease;
   z-index: 2;
 }
 
 .primary {
   background-color: #B4FF00;
-  color: #000000;
+  color: #1a1a1e;
   border: 1px solid transparent;
 }
 .primary:hover {
@@ -114,7 +114,7 @@ span, p, a, h3 {
 }
 .secondary:hover {
   background-color: #B4FF00;
-  color: #000000;
+  color: #1a1a1e;
 }
 
 .mobile {
@@ -163,7 +163,7 @@ header {
 }
 .navbar .nav__list a {
   font-size: 1.1rem;
-  color: #FFFFFF;
+  color: white;
   position: relative;
 }
 .navbar #btn-nav {
@@ -190,12 +190,12 @@ header {
     padding-right: 1.5rem;
     transition: 0.4s ease;
   }
-  .navbar .nav__list .nav__links a {
+  .navbar .nav__links a {
     font-size: 2.5rem;
   }
   .navbar #btn-nav {
     display: inline-flex;
-    color: #000000;
+    color: #1a1a1e;
   }
   .navbar #btn-desktop {
     display: none;
@@ -246,8 +246,8 @@ header {
 }
 .footer .footer__grid ul li a {
   margin-block: 2.5rem;
-  color: #FFFFFF;
-  font-size: 2rem;
+  color: white;
+  font-size: 2.1rem;
 }
 .footer .footer__grid .footer__social {
   display: flex;
@@ -261,14 +261,12 @@ header {
 .footer .footer__grid .footer__info {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  text-align: center;
-  gap: 4rem;
+  text-align: end;
 }
 .footer .footer__grid .footer__info .privacy {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 1.5rem;
   font-size: 1.4rem;
 }
 .footer .footer__grid .footer__info .privacy a:hover {
@@ -303,7 +301,7 @@ header {
   background-color: #B4FF00;
 }
 .footer .arrow__home:hover:hover svg {
-  fill: #000000;
+  fill: #1a1a1e;
 }
 
 @media (min-width: 600px) and (max-width: 899px) {
@@ -327,19 +325,19 @@ header {
   }
   .footer .footer__grid {
     grid-template-columns: 1fr;
-    margin-inline: 7vw;
     margin-top: 3rem;
   }
   .footer .footer__grid ul li a {
-    font-size: 2.3rem;
+    font-size: 2.2rem;
   }
   .footer .footer__grid .footer__social {
-    margin-block: 3.5rem;
+    margin-block: 4rem;
     gap: 3rem;
   }
   .footer .footer__grid .footer__info {
     align-items: center;
-    margin-bottom: 1.5rem;
+    text-align: center;
+    margin-bottom: 1.7rem;
   }
   .footer .footer__copyright {
     margin-inline: 1vw;
@@ -376,7 +374,7 @@ header {
 }
 .hero .hero__subtitle p {
   width: 150px;
-  font-size: 1.1rem;
+  font-size: 1rem;
   text-align: center;
 }
 .hero .hero__subtitle a {
@@ -388,7 +386,7 @@ header {
     height: 100vh;
   }
   .hero .hero__title {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
   }
   .hero .hero__subtitle {
     margin-bottom: 8rem;
@@ -397,10 +395,10 @@ header {
 }
 .product {
   height: auto;
-  margin-top: 2rem;
+  padding-top: 2rem;
+  background-color: black;
 }
 .product .product__flex {
-  margin-top: 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   border-bottom: 1px solid rgba(152, 152, 152, 0.516);
@@ -417,11 +415,9 @@ header {
   flex-direction: column;
   direction: ltr;
 }
-.product .product__flex .product__grid .product__box p {
-  margin-top: 1.5rem;
-}
-.product .product__flex .product__grid .product__box span {
+.product .product__flex .product__grid .product__box h3 {
   font-weight: 700;
+  margin-block: 1rem;
 }
 .product .product__flex .product__grid .product__box:nth-child(1) {
   border: none;
@@ -770,12 +766,12 @@ header {
   text-align: center;
 }
 .discount .discount__box h3 {
-  color: #000000;
+  color: #1a1a1e;
   font-size: 1.8rem;
   font-weight: 800;
 }
 .discount .discount__box p {
-  color: #000000;
+  color: #1a1a1e;
   margin-inline: 15vw;
 }
 .discount .discount__box form {
@@ -788,28 +784,28 @@ header {
 }
 .discount .discount__box form input {
   padding: 0.65rem;
-  border: 1px solid #000000;
+  border: 1px solid #1a1a1e;
   border-radius: 5px;
   width: 500px;
   background: transparent;
   outline: none;
   font-family: "Lato", sans-serif;
   font-weight: 300;
-  color: #000000;
+  color: #1a1a1e;
 }
 .discount .discount__box form input::placeholder {
   font-family: "Space Mono", monospace;
-  color: #000000;
+  color: #1a1a1e;
 }
 .discount .discount__box form button {
-  background-color: #000000;
+  background-color: #1a1a1e;
   font-family: "Space Mono", monospace;
   min-width: 25%;
   border: 1px solid black;
   transition: 0.3s ease;
 }
 .discount .discount__box form button:hover {
-  color: #000000;
+  color: #1a1a1e;
   background-color: transparent;
 }
 
@@ -900,8 +896,8 @@ header {
 .uses .uses__grid .uses__card {
   display: flex;
   flex-direction: column;
-  width: 380px;
-  height: 530px;
+  width: 420px;
+  height: 540px;
   border-radius: 20px;
   background-color: #202020;
   -webkit-box-shadow: 13px 13px 0px 0px rgb(180, 255, 0);

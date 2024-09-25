@@ -1,8 +1,8 @@
 .product{
     height: auto;
-    margin-top: 2rem;
+    padding-top: 2rem;
+    background-color: $color-bg-product;
     .product__flex{
-        margin-top: 2rem;
         display: grid;
         grid-template-columns: 1fr 1fr;
         border-bottom: $border-product;
@@ -20,14 +20,11 @@
                 flex-direction: column;
                 direction: ltr;
                 
-                p{
-                    margin-top: 1.5rem;
-                }
-
-                span{
+                h3{
                     font-weight: $fw-bold;
+                    margin-block: 1rem;
                 }
-
+               
                 &:nth-child(1){
                     border: none;
                 }
@@ -35,7 +32,6 @@
             }
         }
 
-       
        &:nth-child(3){
         direction: rtl; 
         border-top: none;
@@ -85,6 +81,5 @@
                 direction: ltr; 
                 }
         }
-
     }
 }
