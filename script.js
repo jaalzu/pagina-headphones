@@ -28,102 +28,105 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-  //   ScrollReveal().reveal('.hero__title ', {
-  //     duration: 1100,
-  //     distance: '150px', 
-  //     easing: 'ease-in-out',
-  // });
+    ScrollReveal().reveal('.hero__title ', {
+      duration: 1100,
+      distance: '150px', 
+      easing: 'ease-in-out',
+  });
    
 
 
-// ScrollReveal().reveal('.navbar', {
-//   duration: 700,       
-//   distance: '50px',    
-//   easing: 'ease-in-out',
-//   delay: 1000,          
-//   origin: 'top'       
-// });
+ScrollReveal().reveal('.navbar', {
+  duration: 700,       
+  distance: '20px',    
+  easing: 'ease-in-out',
+  delay: 1000,          
+  origin: 'top'       
+});
 
 
-  //   ScrollReveal().reveal('.hero__subtitle', {
+    ScrollReveal().reveal('.hero__subtitle', {
 
-  //     duration: 500, 
-  //     distance: '20px', 
-  //     easing: 'ease', 
-  // });
-
-
-
-// ScrollReveal().reveal('.section__title', {
-//   duration: 1500,      
-//   distance: '150px',     
-//   origin: 'bottom',    
-//   reset: false,         
-//   opacity: 0,          
-//   scale: 0.5            
-// });
+      duration: 500, 
+      distance: '20px', 
+      easing: 'ease', 
+      delay:1000
+  });
 
 
 
-// ScrollReveal().reveal('.product__flex', {
-//   duration: 1000,  
-//   distance: '50px', 
-//   easing: 'ease',
-//   delay: 1000
-// });
+ScrollReveal().reveal('.section__title', {
+  duration: 1500,      
+  distance: '150px',     
+  origin: 'bottom',    
+  reset: false,         
+  opacity: 0,          
+  scale: 0.5            
+});
 
 
-// ScrollReveal().reveal('.uses__grid', {
-//   
-//   duration: 1000,
-//   distance: '100px',
-//   easing: 'ease-in',
-//   delay: 500,
-//   origin:'left'
-// });
-// ScrollReveal().reveal('.gallery', {
-//  
-//   duration: 1000,
-//   distance: '50px', 
-//   easing: 'ease-in',
-//   delay: 500,
-//   origin:'right'
-// });
+
+ScrollReveal().reveal('.product__flex', {
+  duration: 1000,  
+  distance: '5%', 
+  easing: 'ease',
+  delay: 1000
+});
 
 
-// ScrollReveal().reveal('.about__description', {
-//   
-//   duration: 1000, 
-//   distance: '150px',
-//   easing: 'ease-in',
-//   delay: 500,
-//   origin:'bottom'
-// });
+ScrollReveal().reveal('.uses__grid', {
+  
+  duration: 800,
+  distance: '50px',
+  easing: 'ease-in',
+  delay: 500,
+  origin:'left'
+});
 
 
-// ScrollReveal().reveal('.about__grid', {
-//   duration: 1000,
-//   distance: '150px',
-//   easing: 'ease-in',
-//   delay: 1000,
-//   origin:'bottom'
-// });
+ScrollReveal().reveal('.gallery', {
+ 
+  duration: 1000,
+  distance: '50px', 
+  easing: 'ease-in',
+  delay: 500,
+  origin:'bottom'
+});
 
 
-// ScrollReveal().reveal('.sponsors', {
-//   duration: 1000, 
-//   distance: '100px', 
-//   easing: 'ease',
-//   delay: 1500,
-//   origin:'left'
-// });
+ScrollReveal().reveal('.about__description', {
+  
+  duration: 1000, 
+  distance: '150px',
+  easing: 'ease-in',
+  delay: 500,
+  origin:'bottom'
+});
 
 
-// ScrollReveal().reveal('.discount__box', {
-//  
-//   duration: 1000,
-//   distance: '100px',
-//   easing: 'ease',
-//   delay: 1000,
-//   origin:'bottom'
-// });
+ScrollReveal().reveal('.about__grid', {
+  duration: 1000,
+  distance: '150px',
+  easing: 'ease-in',
+  delay: 1000,
+  origin:'bottom'
+});
+
+
+ScrollReveal().reveal('.sponsors', {
+  duration: 1000, 
+  distance: '100px', 
+  easing: 'ease',
+  delay: 1500,
+  origin:'bottom'
+});
+
+
+ScrollReveal().reveal('.discount__box', {
+ 
+  duration: 500,
+  distance: '100px',
+  easing: 'ease-in-out',
+  delay: 1200,
+  origin:'bottom'
+});

@@ -196,7 +196,7 @@ header {
     flex-direction: column;
     background-color: black;
     gap: 3.5rem;
-    padding-right: 1.5rem;
+    padding-right: 2rem;
     transition: 0.4s ease;
   }
   .navbar .nav__links a {
@@ -868,7 +868,7 @@ header {
 .sponsors {
   margin-bottom: 10rem;
   margin-inline: 6vw;
-  padding-top: 3rem;
+  padding-top: 1rem;
 }
 .sponsors h3 {
   font-size: 1.8rem;
@@ -895,7 +895,7 @@ header {
 }
 @media (max-width: 599px) {
   .sponsors {
-    margin-bottom: 6rem;
+    margin-bottom: 3rem;
   }
   .sponsors .sponsors__grid {
     grid-template-columns: repeat(2, 1fr);
