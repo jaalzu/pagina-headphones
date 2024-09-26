@@ -63,12 +63,16 @@ img{
     font-size: 3rem;
     margin-block: 4rem;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .color-primary{
     font-family: $ff-primary;
     color: $color-primary;
 }
+
+
+
 
 @include for-mobile-and-tablet{
     .section__title{
