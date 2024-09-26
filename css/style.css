@@ -656,8 +656,8 @@ header {
     grid-template-columns: repeat(4, 1fr);
   }
   .gallery .social {
-    right: 20%;
     top: 45%;
+    left: 77%;
   }
   .gallery .social a {
     flex-direction: column;
@@ -682,7 +682,7 @@ header {
     transform: translateX(-5px);
   }
 }
-@media (max-width: 599px) {
+@media (min-width: 300px) and (max-width: 899px) {
   .gallery {
     margin-inline: 2vw;
   }

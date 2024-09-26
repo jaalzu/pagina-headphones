@@ -123,8 +123,8 @@ margin-inline: 3vw;
         }
 
         .social{
-            right: 20%;
             top: 45%;
+            left: 77%;
             a{
                 flex-direction: column;
                 max-width: 60%;
@@ -155,7 +155,7 @@ margin-inline: 3vw;
 }
 
 
-@include for-mobile{
+@include for-mobile-and-tablet{
     .gallery{
         margin-inline: 2vw;
 
