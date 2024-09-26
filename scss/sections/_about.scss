@@ -78,6 +78,20 @@
 }
 
 
+
+@include for-small-desktop{
+    .about{
+        .about__grid{
+        margin-inline: 2vw;
+
+        .about__box{
+            padding-bottom: 1.4rem;
+        }
+        }
+    }
+}
+
+
 @include for-mobile{
     .about{
         .about__description{

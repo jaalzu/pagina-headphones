@@ -49,7 +49,16 @@
 
 
 
-
+@include for-small-desktop{
+    .product{
+        .product__flex{
+            img{
+                object-fit: cover;
+                height: 90%;
+            }
+        }
+    }
+}
 
 
 

@@ -455,6 +455,12 @@ header {
   border-left: none;
 }
 
+@media (min-width: 900px) and (max-width: 1439px) {
+  .product .product__flex img {
+    object-fit: cover;
+    height: 90%;
+  }
+}
 @media (min-width: 300px) and (max-width: 899px) {
   .product .product__flex {
     grid-template-columns: 1fr;
@@ -539,6 +545,14 @@ header {
 @media (min-width: 600px) and (max-width: 899px) {
   .about .about__grid {
     margin-inline: 1vw;
+  }
+}
+@media (min-width: 900px) and (max-width: 1439px) {
+  .about .about__grid {
+    margin-inline: 2vw;
+  }
+  .about .about__grid .about__box {
+    padding-bottom: 1.4rem;
   }
 }
 @media (max-width: 599px) {
