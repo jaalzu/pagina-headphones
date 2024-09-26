@@ -444,6 +444,7 @@ header {
 .product .product__flex .product__grid .product__box h3 {
   font-weight: 700;
   margin-block: 1rem;
+  font-size: 1.5rem;
 }
 .product .product__flex .product__grid .product__box:nth-child(1) {
   border: none;
