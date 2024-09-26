@@ -135,7 +135,7 @@ span, p, a, h3 {
 header {
   height: 100vh;
   max-width: 100%;
-  background-image: url(../public/pexels-nardo-1870916-3574678\ -\ copia.jpg);
+  background-image: url(../public/imagenes/hero/hero-desktop.jpg);
   background-position: 45%;
   background-size: contain;
   background-attachment: fixed;
@@ -196,7 +196,7 @@ header {
     flex-direction: column;
     background-color: black;
     gap: 3.5rem;
-    padding-right: 2rem;
+    padding-right: 3.5rem;
     transition: 0.4s ease;
   }
   .navbar .nav__links a {
@@ -222,12 +222,15 @@ header {
   }
 }
 @media (min-width: 600px) and (max-width: 899px) {
+  .navbar .nav__list {
+    padding-right: 4rem;
+  }
   .navbar .nav__list .nav__item a {
     font-size: 3.2rem;
     letter-spacing: 2px;
   }
   .navbar .nav__list #btn-nav {
-    width: 35%;
+    width: 100%;
   }
 }
 .footer {
@@ -407,6 +410,7 @@ header {
   .hero .hero__title {
     margin-top: 6rem;
     margin-inline: 4vw;
+    text-align: center;
   }
   .hero .hero__subtitle {
     margin-bottom: 5rem;
@@ -593,7 +597,11 @@ header {
   text-decoration: underline;
   font-size: 1.2rem;
   display: flex;
+  color: white;
   gap: 1rem;
+}
+.gallery .social a:hover {
+  text-decoration: underline solid #B4FF00;
 }
 .gallery .box-img:hover img {
   transform: scale(1.1);

@@ -47,7 +47,7 @@
                 flex-direction: column;
                 background-color: black;
                 gap: 3.5rem;
-                padding-right: 2rem;
+                padding-right: 3.5rem;
                 transition:  .4s ease;
 
             }
@@ -94,13 +94,14 @@
 @include for-tablet {
     .navbar{
         .nav__list{
+            padding-right: 4rem;
             .nav__item a{
                 font-size: 3.2rem;
                 letter-spacing: 2px;
             }
 
             #btn-nav{
-                width: 35%;
+                width: 100%;
             }
         }
     }

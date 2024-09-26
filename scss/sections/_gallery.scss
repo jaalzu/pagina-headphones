@@ -50,7 +50,12 @@ padding-block: 6rem;
             text-decoration: underline;
             font-size: 1.2rem;
             display: flex;
+            color: $color-white;
             gap: 1rem;
+
+            &:hover{
+                text-decoration: underline solid $color-primary;
+            }
         }
     }
     .box-img:hover img {
