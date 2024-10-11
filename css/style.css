@@ -75,6 +75,27 @@ a {
     font-size: 0.9rem;
   }
 }
+.custom-shape-divider-top-1728611530 {
+  position: absolute;
+  bottom: 0%;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(360deg);
+}
+
+.custom-shape-divider-top-1728611530 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 72px;
+}
+
+.custom-shape-divider-top-1728611530 .shape-fill {
+  fill: #1a1a1e;
+}
+
 h1, h2 {
   font-family: "Lato", sans-serif;
 }
@@ -421,7 +442,8 @@ header {
 .product {
   height: auto;
   padding-top: 2rem;
-  padding-bottom: 2.3rem;
+  position: relative;
+  padding-bottom: 8rem;
   background-color: black;
 }
 .product .product__flex {
@@ -934,8 +956,8 @@ header {
   }
 }
 .uses {
-  margin-block: 12rem;
   height: auto;
+  margin-bottom: 12rem;
 }
 .uses .uses__grid {
   display: flex;
