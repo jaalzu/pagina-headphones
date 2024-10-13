@@ -48,16 +48,9 @@ img{
         
     }
  
-
- .logo{
-    font-size: 1.6rem;
-    font-weight: $fw-regular;
-    z-index: 4;
-    cursor: pointer;
-    span{
-        color: $color-primary;
+    .img-logo{
+        width: 120px;
     }
-}
 
 .section__title{
     font-size: 3rem;

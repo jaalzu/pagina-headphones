@@ -42,14 +42,8 @@ a {
   transform: scaleX(1);
 }
 
-.logo {
-  font-size: 1.6rem;
-  font-weight: 400;
-  z-index: 4;
-  cursor: pointer;
-}
-.logo span {
-  color: #B4FF00;
+.img-logo {
+  width: 120px;
 }
 
 .section__title {
