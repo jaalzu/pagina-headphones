@@ -38,7 +38,7 @@ img{
            transform: scaleX(0);
            background-color: $color-primary;
            height: 1px;
-           transition: transform 0.3s ease-in-out; // Transición para el ancho
+           transition: transform 0.3s ease-in-out; 
            
         }
         &:hover::before{
