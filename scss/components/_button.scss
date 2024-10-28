@@ -1,10 +1,10 @@
 .btn{
     // padding: .5rem 2.1rem;
-    width: 9.3rem;
-    height: 2.5rem;
+    width:9.7rem;
+    height: 2.8rem;
     @include flex-center();
     font-weight: $fw-semibold;
-    font-size: .8rem;
+    font-size: 1.030rem;
     border-radius: 5px;
     cursor: pointer;
     border: none;
@@ -28,7 +28,6 @@
 .secondary{
     background-color: transparent;
     border: 1px solid $color-white-light;
-
     &:hover{
         background-color: $color-primary;
         color: $color-black;

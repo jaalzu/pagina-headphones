@@ -87,11 +87,11 @@
             display: inline-flex;
             margin: 0 auto;
             cursor: pointer;
-            padding: 1rem;
             align-items: center;
             transition: .3s ease;
             svg{
-                fill: #B4FF00;
+                padding: 1rem;
+                fill: $color-primary;
                 display: flex;
             }
 

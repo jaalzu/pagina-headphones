@@ -99,13 +99,13 @@ span, p, a, h3 {
 }
 
 .btn {
-  width: 9.3rem;
-  height: 2.5rem;
+  width: 9.7rem;
+  height: 2.8rem;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 600;
-  font-size: 0.8rem;
+  font-size: 1.03rem;
   border-radius: 5px;
   cursor: pointer;
   border: none;
@@ -151,9 +151,9 @@ span, p, a, h3 {
 header {
   height: 100vh;
   max-width: 100%;
-  background-image: url(../public/imagenes/hero/hero-desktop.jpg);
+  background-image: url(../public/imagenes/hero/hero-img.webp);
   background-position: 45%;
-  background-size: contain;
+  background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-color: rgb(11, 5, 29);
@@ -170,14 +170,18 @@ header {
   padding-inline: 3vw;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
+  position: relative;
+}
+.navbar .img-logo {
+  position: absolute;
+  left: 5%;
+  top: 30%;
 }
 .navbar .nav__list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1.5rem;
+  gap: 2rem;
   z-index: 3;
+  display: flex;
 }
 .navbar .nav__list a {
   font-size: 1.1rem;
@@ -322,11 +326,11 @@ header {
   display: inline-flex;
   margin: 0 auto;
   cursor: pointer;
-  padding: 1rem;
   align-items: center;
   transition: 0.3s ease;
 }
 .footer .arrow__home svg {
+  padding: 1rem;
   fill: #B4FF00;
   display: flex;
 }
@@ -399,22 +403,21 @@ header {
   line-height: 1.3;
   text-transform: uppercase;
   padding-inline: 2vw;
+  color: #B4FF00;
 }
 .hero .hero__title span {
-  color: #B4FF00;
+  color: white;
   font-family: "Lato", sans-serif;
 }
 .hero .hero__subtitle {
-  padding-inline: 10vw;
+  margin-right: 10rem;
   display: flex;
-  justify-content: flex-end;
   align-items: flex-end;
   flex-direction: column;
 }
 .hero .hero__subtitle p {
   width: 150px;
   font-size: 1.2rem;
-  text-align: center;
 }
 .hero .hero__subtitle a {
   margin-top: 2rem;
@@ -430,8 +433,10 @@ header {
     text-align: center;
   }
   .hero .hero__subtitle {
-    margin-bottom: 5rem;
-    align-items: center;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    text-align: center;
+    margin-right: auto;
   }
 }
 .product {
@@ -478,7 +483,7 @@ header {
 @media (min-width: 900px) and (max-width: 1439px) {
   .product .product__flex img {
     object-fit: cover;
-    height: 90%;
+    height: 100%;
   }
 }
 @media (min-width: 300px) and (max-width: 899px) {

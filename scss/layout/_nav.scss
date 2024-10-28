@@ -1,15 +1,21 @@
 .navbar{
     height: 13vh;
     padding-inline: 3vw;
-    @include flex-center(center,space-between);
-
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    .img-logo{
+        position: absolute;
+        left: 5%;
+        top: 30%;
+    }
 
     .nav__list{
-            @include flex-center();
-            gap: 1.5rem;
+            gap: 2rem;
             z-index: 3;
-       
-        
+            display: flex;
+
             a{
                 font-size: 1.1rem;
                 color: $color-white;
