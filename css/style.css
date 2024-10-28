@@ -19,6 +19,11 @@ img {
   height: auto;
 }
 
+::selection {
+  background-color: #B4FF00; /* Cambia a tu color preferido */
+  color: #1a1a1e; /* Cambia el color del texto si lo deseas */
+}
+
 a {
   cursor: pointer;
   position: relative;
